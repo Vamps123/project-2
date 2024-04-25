@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Tech Genious</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .container p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .services {
+            margin-top: 20px;
+        }
+
+        .services h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .services li {
+            margin-bottom: 20px;
+        }
+
+        .services h3 {
+            font-size: 20px;
+            color: #007bff;
+        }
+
+        .services p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .hero {
+            background-image: url('https://www.simplilearn.com/ice9/free_resources_article_thumb/Technology_Trends.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h2 {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .service-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .service-description {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Tech Genious 
+    </header>
+    <main>
+        <section id="services" class="hero">
+            <h2>Welcome to Tech Genious</h2>
+            <br><br>
+            <div class="container">
+                <p>Tech Genious provides very accurate solutions for your problems.</p>
+            </div>
+            <br><br>
+           
+        </section>
+        <section id="features" class="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <img src="https://thumbs.dreamstime.com/b/web-development-coding-programming-internet-technology-business-concept-web-development-coding-programming-internet-technology-122741764.jpg?w=1400" alt="Web Development" class="service-image">
+                <div class="service-description">
+                    <h3>Web Development</h3>
+                    <p>We specialize in building responsive and user-friendly websites for businesses of all sizes.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg?size=626&ext=jpg&ga=GA1.1.289883091.1711047644&semt=ais" alt="Mobile App Development" class="service-image">
+                <div class="service-description">
+                    <h3>Mobile App Development</h3>
+                    <p>Our team of experienced developers can create custom mobile apps for both iOS and Android platforms.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://www.springboard.com/blog/wp-content/uploads/2022/06/what-is-digital-marketing-380x199.png" alt="Digital Marketing" class="service-image">
+                <div class="service-description">
+                    <h3>Digital Marketing</h3>
+                    <p>We offer comprehensive digital marketing solutions, including SEO, PPC, and social media marketing.</p>
+                </div>
+            </div>
+        </section>
+        For the tech Genious we offer various help and learnings needed by the user for further development 
+    </main>
+    <footer>
+        <p>Tech Genious. All rights reserved.</p>
+    </footer>
+    <script>
+
+        const isLoggedIn = localStorage.getItem("isLoggedIn");
+        if (!isLoggedIn) {
+
+            window.location.href = "index.html"; 
+        }
+    </script>
+</body>
+</html>
